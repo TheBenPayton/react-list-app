@@ -12,17 +12,23 @@ body{
     background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
     border-color: lightseagreen;
     box-sizing: border-box;
-    border-width: 3px;
-    border-radius: 5%;
-    border-style: groove;
+    border-width: 2px;
+    border-radius: 1%;
+    border-style: double;
     align-content: center;
     margin: auto;
-    padding: 30px;
+    padding: 20px;
+    box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
 }
 .UIbox:hover {
     animation-name: cshift;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    transform: scale(1.02);
+}
+.signIn{
+    margin-bottom: 30px;
+
 }
 .launchButton{
     border-radius: 10px;
@@ -34,18 +40,29 @@ body{
     background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);
     box-sizing: border-box;
     box-shadow: 5px;
-    border-width: 3px;
+    border-width: 2px;
     border-radius: 5%;
-    border-style: groove;
+    border-style: double;
     border-color: lightseagreen;
     align-content: center;
     position: absolute;
-}
-.UIbox2:hover{
+    animation-fill-mode: forwards;
     animation-name: slide;
     animation-iteration-count: initial;
     animation-duration: 4s;
-    animation-fill-mode: forwards;
+    box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+}
+.UIbox2:hover{
+    
+}
+.listItem {
+    margin-bottom: 15px;
+}
+.mega{
+    color: gray;
+    font-family: 'Pacifico', cursive;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -79,3 +96,10 @@ body{
         border-color: turquoise;
     }
 }
+@keyframes load360 {
+    50% {
+    transform: rotate(360deg);
+    } 
+  }
+
+/**WEBKIT KEYFRAMES BELOW HERE**/
