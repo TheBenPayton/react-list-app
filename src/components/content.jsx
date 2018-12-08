@@ -23,43 +23,16 @@ class Content extends Component {
     render() { 
         return ( 
             <div className="UIbox">
-                <button className="launchButton" onClick={ this.handleClick }>Launch!🚀</button>
+                <button className="launchButton" onClick={ this.handleClick }>Send my list!🚀</button>
                 <div className="UIbox2">
                     <ul>Instructions:
                         <li>Create your own lists!</li>
                         <li>Set goals and objectives!</li>
                         <li>Just select what you want to do!</li>
-                        <li>Place your memos or reminders in the boxes!</li>
+                        <li>Place your memos or reminders in the input boxes!</li>
                     </ul>
-                </div>
-                <form className="listItem">
-                    <label>
-                    Item 1:
-                    <input type="text" name="input1" />
-                    </label>
-                    <input type="submit" value="Submit" />
-                </form>
-                <form className="listItem">
-                <label>
-                    Item 2:
-                    <input type="text" name="input1" />
-                    </label>
-                    <input type="submit" value="Submit" />
-                </form>
-                <form className="listItem">
-                <label>
-                    Item 3:
-                    <input type="text" name="input1" />
-                    </label>
-                    <input type="submit" value="Submit" />
-                </form>
-                <form className="listItem">
-                <label>
-                    Item 4:
-                    <input type="text" name="input1" />
-                    </label>
-                    <input type="submit" value="Submit" />
-                </form>
+                </div> 
+                <div id="listApp"></div>
             </div>
         );
     }
