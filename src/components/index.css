@@ -8,7 +8,8 @@ body{
 .UIbox {
     height: 450px;
     width: 650px;
-    background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
+    background: linear-gradient(132deg, #33ccff 0%, #ff99cc);
+    background-size: 150% 150%;
     border-color: lightseagreen;
     box-sizing: border-box;
     border-width: 2px;
@@ -18,6 +19,10 @@ body{
     margin: auto;
     padding: 20px;
     box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    animation-name: bgshift;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
 }
 .UIbox:hover {
     animation-name: cshift;
@@ -55,6 +60,7 @@ body{
     width: 250px;
     color: black;
     background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);
+    background-size: 150% 150%;
     box-sizing: border-box;
     box-shadow: 5px;
     border-width: 2px;
@@ -64,13 +70,13 @@ body{
     align-content: center;
     position: absolute;
     animation-fill-mode: forwards;
-    animation-name: slide;
+    animation-name: slide, bgshift;
     animation-iteration-count: initial;
     animation-duration: 4s;
     box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
 }
 .UIbox2:hover{
-    
+
 }
 .paragraph{
     color: salmon;
@@ -125,17 +131,14 @@ body{
     } 
 }
 @keyframes bgshift{ 
-    25%{
-        background: linear-gradient(to top right, white 0%, yellow 100%);
+    0%{
+        background-position: 0% 50%;
     }
     50%{
-        background: linear-gradient(to top right, teal 0%, salmon 100%);
-    }
-    75%{
-        background: linear-gradient(to top right, orange 0%, white 100%);
+        background-position: 100% 50%;
     }
     100%{
-        background: linear-gradient(to top right, lime 0%, yellow 100%);
+        background-position: 0% 50%;
     }
 }
 
