@@ -7,7 +7,7 @@ body{
 
 .UIbox {
     height: 450px;
-    width: 650px;
+    width: 600px;
     background: linear-gradient(132deg, #33ccff 0%, #ff99cc);
     background-size: 150% 150%;
     border-color: lightseagreen;
@@ -23,6 +23,7 @@ body{
     animation-duration: 10s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
+    margin-bottom: 40px;
 }
 .UIbox:hover {
     animation-name: cshift;
@@ -59,6 +60,7 @@ body{
     height: 150px;
     width: 250px;
     color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);
     background-size: 150% 150%;
     box-sizing: border-box;
@@ -74,6 +76,7 @@ body{
     animation-iteration-count: initial;
     animation-duration: 4s;
     box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 90px;
 }
 .UIbox2:hover{
 
@@ -84,6 +87,7 @@ body{
     /*height: 25%;
     width: 20%;*/
     color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);
     background-size: 150% 150%;
     box-sizing: border-box;
@@ -99,7 +103,7 @@ body{
     animation-iteration-count: initial;
     animation-duration: 4s;
     box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
-    margin-top: 90px;
+    margin-top: 165px;
 }
 .paragraph{
     color: salmon;
@@ -109,12 +113,28 @@ body{
 }
 #listApp{
     color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 5px;
+}
+#inputBox{
+    margin-left: 4px;
+    margin-right: 4px;
+    border-color: black;
+    border-width: 2px;
+    animation-name: cshift;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 .mega{
     color: snow;
     font-family: 'Pacifico', cursive;
     align-items: center;
     text-align: center;
+    animation-name: popOut;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 .footer {
     margin: auto;
@@ -122,6 +142,7 @@ body{
     animation-name: tshift;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @keyframes tshift{
@@ -151,7 +172,7 @@ body{
         transform: translateX(0px) rotate(0deg);
     }
     to{
-        transform: translateX(275px) rotate(360deg);
+        transform: translateX(300px) rotate(360deg);
     }
 }
 @keyframes cshift{
@@ -182,6 +203,16 @@ body{
     }
     100%{
         background-position: 0% 50%;
+    }
+}
+@keyframes popOut{
+    from{
+        color: salmon;
+        transform: scale(1.0);
+    }
+    to{
+        color: snow;
+        transform: scale(1.1);
     }
 }
 
