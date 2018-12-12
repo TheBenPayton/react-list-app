@@ -4,16 +4,20 @@ body{
     background-image: url("background.png");
     color: aliceblue;
 }
+
 #icons{
     margin-left: auto;
 }
 #icons:hover {
     transform: scale(1.1);
+    animation-name: tshift;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
 .UIbox {
-    height: 450px;
+    height: 700px;
     width: 600px;
-    background: linear-gradient(132deg, #33ccff 0%, #ff99cc);
+    background: linear-gradient(132deg, aliceblue 0%, #3498DB 100%);
     background-size: 150% 150%;
     border-color: lightseagreen;
     box-sizing: border-box;
@@ -66,7 +70,7 @@ body{
     width: 250px;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);
+    background: linear-gradient(to bottom left, aliceblue 0%, #3498DB 100%);
     background-size: 150% 150%;
     box-sizing: border-box;
     box-shadow: 5px;
@@ -96,7 +100,7 @@ body{
     width: 20%;*/
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);
+    background: linear-gradient(to bottom left, aliceblue 0%, #3498DB 75%);
     background-size: 150% 150%;
     box-sizing: border-box;
     box-shadow: 5px;
@@ -116,8 +120,14 @@ body{
 .UIbox3:hover{
 
 }
+#listText{
+    /*List text properties*/
+    font-family: cursive;
+    font-size: 15px;
+    color: black;
+}
 .paragraph{
-    color: salmon;
+    color: #E74C3C;
 }
 #insert{
     color: lightseagreen;
@@ -207,13 +217,13 @@ body{
 }
 @keyframes bgshift{ 
     0%{
-        background-position: 0% 50%;
+        background-position: 0% 0%;
     }
     50%{
         background-position: 100% 100%;
     }
     100%{
-        background-position: 0% 50%;
+        background-position: 0% 0%;
     }
 }
 @keyframes popOut{
