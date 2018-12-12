@@ -11,12 +11,12 @@ function link(){
 const NavBar = () => {
     return(
         <div className="navi">
-            <AppBar style={{backgroundColor: 'indianred'}} position="fixed" color="secondary">
+            <AppBar style={{backgroundColor: '#3498DB'}} position="fixed" color="secondary">
                 <Toolbar>
                     <Typography variant="title" color="inherit">
                         Listy, the greatest list building buddy
                     </Typography>
-                    <Icon id='icons' onClick={ link() }>mood</Icon>
+                    <a href="https://github.com/TheBenPayton" id='icons'><Icon onClick={ link() }>mood</Icon></a>
                 </Toolbar>
             </AppBar>
         </div>
