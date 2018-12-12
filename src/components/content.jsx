@@ -2,7 +2,6 @@
 as in the body styling and what not!
 */
 import React, { Component } from 'react';
-
 //Functions go below here:
 
 //JSX Code/component that gets rendered and exported:
@@ -21,6 +20,7 @@ class Content extends Component {
                         <li>Just select what you want to do!</li>
                         <li>Place your memos or reminders in the input boxes!</li>
                         <li>Refresh the page to start a new list!</li>
+                        <li>Time is: </li>
                     </ul>
                 </div> 
                 <div className="UIbox3">
