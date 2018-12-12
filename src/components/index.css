@@ -4,7 +4,12 @@ body{
     background-image: url("background.png");
     color: aliceblue;
 }
-
+#icons{
+    margin-left: auto;
+}
+#icons:hover {
+    transform: scale(1.1);
+}
 .UIbox {
     height: 450px;
     width: 600px;
@@ -80,6 +85,9 @@ body{
 }
 .navi{
     margin: 90px;
+}
+.appbar{
+
 }
 .UIbox3 {
     height: 150px;
