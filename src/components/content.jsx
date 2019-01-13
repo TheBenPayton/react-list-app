@@ -3,12 +3,17 @@ as in the body styling and what not!
 */
 import React, { Component } from 'react';
 //Functions go below here:
+function time() {
+
+    console.log('rendering the time partition.');
+}
 
 //JSX Code/component that gets rendered and exported:
 class Content extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = {  };
+        
     }
     render() { 
         return ( 

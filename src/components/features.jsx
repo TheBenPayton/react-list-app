@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 
-var obj = {
-    name: null,
-    age: null,
-    email: null
-};
 
 class Features extends Component {
     constructor(props) {
@@ -16,12 +11,18 @@ class Features extends Component {
         var userObj = [{
             name: null,
             age: null,
-            email: null
+            email: null,
+            answer: null
          }
         ];
         console.log('Entities that exist currently: ' + userObj.name + ' ' + userObj.email);
         userObj.name = prompt("Please enter your name!");
-        userObj.email = prompt("Please enter your email!");
+        userObj.answer = prompt("Would you like to submit email? (yes/no)");
+        if(userObj.answer == 'yes'){
+            userObj.email = prompt("Please enter your email!");
+        } else {
+            console.log('User opted out of email.');
+        }
         console.log("Entitiy added: " + userObj.name + " " + userObj.email);
         //Linking global variables to react prop functions:
         document.getElementById("insert").innerHTML = userObj.name;

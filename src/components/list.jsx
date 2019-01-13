@@ -56,7 +56,7 @@ class App extends React.Component {
   class TodoList extends React.Component {
     render() {
       return (
-        <ol>
+        <ol id='listText'>
           {this.props.items.map(item => (
             <li key={item.id}>{item.text}</li>
           ))}

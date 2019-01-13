@@ -6,8 +6,11 @@ import Typography from '@material-ui/core/Typography';
 import Icon from '@material-ui/core/Icon';
 
 function link(){
+    //This function is linked to the button to let dev know
+    //Whenever the button below is successfully clicked.
     console.log('Clicked');
 }
+
 const NavBar = () => {
     return(
         <div className="navi">

@@ -1,7 +1,7 @@
 /*Styling page for the app!*/
 body{
     background-color: black;
-    background-image: url("background.png");
+    background-image: url("background.jpg");
     color: aliceblue;
 }
 
@@ -119,6 +119,8 @@ body{
 }
 .UIbox3:hover{
 
+
+    
 }
 #listText{
     /*List text properties*/
