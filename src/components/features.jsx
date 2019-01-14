@@ -10,7 +10,6 @@ class Features extends Component {
         console.log('start');
         var userObj = [{
             name: null,
-            age: null,
             email: null,
             answer: null
          }
@@ -18,9 +17,11 @@ class Features extends Component {
         console.log('Entities that exist currently: ' + userObj.name + ' ' + userObj.email);
         userObj.name = prompt("Please enter your name!");
         userObj.answer = prompt("Would you like to submit email? (yes/no)");
-        if(userObj.answer == 'yes'){
+        if(userObj.answer === 'yes'){
             userObj.email = prompt("Please enter your email!");
+            alert("Welcome to Listy!");
         } else {
+            alert("You have opted out of email!\nWelcome to Listy!");
             console.log('User opted out of email.');
         }
         console.log("Entitiy added: " + userObj.name + " " + userObj.email);
