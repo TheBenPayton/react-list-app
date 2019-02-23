@@ -9,8 +9,6 @@ import App from "./components/list";
 import UI from "./components/container";
 import Navbar from "./components/navbar";
 
-//Call you renders below here and make sure that they match the corresponding-
-//HTML ID name!!
 ReactDOM.render(<Content />, document.getElementById('root'));
 ReactDOM.render(<Features />, document.getElementById('secondary'));
 ReactDOM.render(<Container />, document.getElementById('container'));
